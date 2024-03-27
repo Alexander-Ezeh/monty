@@ -7,6 +7,7 @@
  *
  * Return: None.
  */
+
 void f_pstr(stack_t **head, unsigned int counter)
 {
     stack_t *h;
