@@ -23,13 +23,15 @@ typedef struct stack_s
 	struct stack_s *next;
 } stack_t;
 /**
- * struct bus_s - variables -args, file, line content
- * @arg: value
- * @file: pointer to monty file
- * @content: line content
- * @lifi: flag change stack <-> queue
- * Description: carries values through the program
+ * struct bus_s - Structure to carry variables and state information.
+ * @arg: Value associated with an instruction.
+ * @file: Pointer to the Monty file being processed.
+ * @content: Line content read from the Monty file.
+ * @lifi: Flag to switch between stack and queue mode.
+ *
+ * Description: Structure to carry values and state information throughout the program.
  */
+
 typedef struct bus_s
 {
 	char *arg;
@@ -39,13 +41,14 @@ typedef struct bus_s
 }  bus_t;
 extern bus_t bus;
 /**
- * struct instruction_s - opcode and its function
- * @opcode: the opcode
- * @f: function to handle the opcode
+ * struct instruction_s - Structure representing an opcode and its function.
+ * @opcode: The operation code.
+ * @f: Pointer to the function to handle the opcode.
  *
- * Description: opcode and its function
- * for stack, queues, LIFO, FIFO Holberton project
+ * Description: Structure representing an opcode and its corresponding function
+ * for stack, queues, LIFO, FIFO in ALX project.
  */
+
 typedef struct instruction_s
 {
 	char *opcode;
